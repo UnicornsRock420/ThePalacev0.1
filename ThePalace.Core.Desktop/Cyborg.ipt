@@ -1,0 +1,61 @@
+﻿ON MAIN {
+    "Hello World!!!" CONSOLEMSG
+
+    "alluringhistoria.epalaces.com:9998" CONNECT
+}
+
+ON SIGNON {
+    1 GOTOROOM
+}
+
+ON ENTER {
+    "ENTER!" CONSOLEMSG
+}
+
+ON CHAT {
+    "CHAT!" CONSOLEMSG
+}
+
+ON INCHAT {
+    "INCHAT!" CONSOLEMSG
+}
+
+ON CONNECTIONESTABLISHED {
+    "Connection Established!!!" CONSOLEMSG
+}
+
+ON CONNECTIONERROR {
+    "Connection Error..." CONSOLEMSG
+}
+
+ON DISCONNECT {
+    "Disconnected!" CONSOLEMSG
+}
+
+ON NAVERROR {
+    "Sorry, that Room ID doesn't exist!" CONSOLEMSG
+}
+
+ON ROOMLOAD {
+    "ROOMLOAD!" CONSOLEMSG
+}
+
+ON ROOMREADY {
+    "ROOMREADY!" CONSOLEMSG
+}
+
+ON SERVERINFO {
+    "SERVERINFO!" CONSOLEMSG
+}
+
+ON SERVERMSG {
+    "SERVERMSG!" CONSOLEMSG
+}
+
+ON LISTOFALLUSERS {
+    "LISTOFALLUSERS!" CONSOLEMSG
+}
+
+ON LISTOFALLROOMS {
+    "LISTOFALLROOMS!" CONSOLEMSG
+}

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+    <Options>
+        <GUI>
+            <General>
+                <InterpolationMode value="NearestNeighbor"/>
+                <PixelOffsetMode value="Half"/>
+                <SmoothingMode value="None"/>
+                <SysTrayIcon enabled="false" />
+            </General>
+            <Notifications>
+                <Toast enabled="true"/>
+            </Notifications>
+        </GUI>
+        <Scripting>
+            <Iptscrae>
+                <Cyborgs enabled="true"/>
+            </Iptscrae>
+            <JavaScript>
+                <Cyborgs enabled="false"/>
+            </JavaScript>
+            <Python>
+                <Cyborgs enabled="false"/>
+            </Python>
+        </Scripting>
+    </Options>
+    <Settings>
+        <GUI>
+            <Connection>
+                <Usernames>
+                    <Usernames>Janus (Testing Client)</Usernames>
+                </Usernames>
+                <Addresses>
+                    <Addresses>alluringhistoria.epalaces.com:9998</Addresses>
+                    <Addresses>animanic.epalaces.com:9998</Addresses>
+                </Addresses>
+            </Connection>
+        </GUI>
+    </Settings>
+    <Macros>
+        <Macro values="-2028848857|-510298500"/>
+    </Macros>
+    <HotKeys>
+        <HotKey keys="Control|F" binding="ShowUserListForm"/>
+        <HotKey keys="Control|G" binding="ShowRoomListForm"/>
+        <HotKey keys="Control|L" binding="ShowLogForm"/>
+        <HotKey keys="Control|R" binding="ClearLogForm"/>
+    </HotKeys>
+    <Ribbon>
+        <Bookmarks/>
+        <Connection/>
+        <LiveDirectory/>
+        <Separator/>
+        <GoBack type="ddl"/>
+        <GoForward type="ddl"/>
+        <Separator/>
+        <UsersList type="ddl"/>
+        <RoomsList type="ddl"/>
+        <Sounds type="ddl"/>
+        <Draw/>
+        <Separator/>
+        <DoorOutlines/>
+        <UserNametags/>
+        <Chatlog/>
+        <Separator/>
+        <Tabs/>
+        <Terminal/>
+        <SuperUser/>
+    </Ribbon>
+</Config>

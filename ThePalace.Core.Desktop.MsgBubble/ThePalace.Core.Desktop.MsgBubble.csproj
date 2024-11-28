@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThePalace.Core.Client.Core\ThePalace.Core.Client.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core.Desktop.Core\ThePalace.Core.Desktop.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core\ThePalace.Core.csproj" />
+  </ItemGroup>
+
+</Project>

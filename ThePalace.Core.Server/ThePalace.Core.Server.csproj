@@ -1,0 +1,207 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\AdminOnly\Admin\CMD_RELOADPLUGINS.cs" />
+    <Compile Remove="Commands\CMD_Template.cs" />
+    <Compile Remove="DbPatStream.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Media\Applause.mp3" />
+    <None Remove="Media\binarydna.png" />
+    <None Remove="Media\Boing.mp3" />
+    <None Remove="Media\Bored.mp3" />
+    <None Remove="Media\breakout.gif" />
+    <None Remove="Media\c-stage.gif" />
+    <None Remove="Media\clouds.gif" />
+    <None Remove="Media\clouds.jpg" />
+    <None Remove="Media\conference_room.gif" />
+    <None Remove="Media\Connect.mp3" />
+    <None Remove="Media\Cough.mp3" />
+    <None Remove="Media\Crunch.mp3" />
+    <None Remove="Media\Demented.mp3" />
+    <None Remove="Media\endoftime.gif" />
+    <None Remove="Media\Hello.mp3" />
+    <None Remove="Media\Hi.mp3" />
+    <None Remove="Media\Kiss.mp3" />
+    <None Remove="Media\lobby.gif" />
+    <None Remove="Media\No.mp3" />
+    <None Remove="Media\patient.gif" />
+    <None Remove="Media\plugin.conf" />
+    <None Remove="Media\Poot.mp3" />
+    <None Remove="Media\Pop.mp3" />
+    <None Remove="Media\pserver.conf" />
+    <None Remove="Media\pserver.pat" />
+    <None Remove="Media\pserver.prefs" />
+    <None Remove="Media\pserver.prp" />
+    <None Remove="Media\Scream.mp3" />
+    <None Remove="Media\Shh.mp3" />
+    <None Remove="Media\SignOff.mp3" />
+    <None Remove="Media\SignOn.mp3" />
+    <None Remove="Media\sm_conference.gif" />
+    <None Remove="Media\stage-sm.gif" />
+    <None Remove="Media\Stageleft.mp3" />
+    <None Remove="Media\Whispers.mp3" />
+    <None Remove="Media\Yawn.mp3" />
+    <None Remove="Media\Yes.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Media\Applause.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\binarydna.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Boing.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Bored.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\breakout.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\c-stage.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\clouds.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\clouds.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\conference_room.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Connect.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Cough.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Crunch.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Demented.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\endoftime.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Hello.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Hi.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Kiss.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\lobby.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\No.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\patient.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\plugin.conf" />
+    <Content Include="Media\Poot.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Pop.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\pserver.conf" />
+    <Content Include="Media\pserver.pat" />
+    <Content Include="Media\pserver.prefs" />
+    <Content Include="Media\pserver.prp" />
+    <Content Include="Media\Scream.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Shh.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\SignOff.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\SignOn.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\sm_conference.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\stage-sm.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Stageleft.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Whispers.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Yawn.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Yes.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Commands\CMD_Template.cs" />
+    <None Include="Utility\DbPatStream.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThePalace.Core.Database.Core\ThePalace.Core.Database.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core.Server.Core\ThePalace.Core.Server.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core\ThePalace.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Factories\Partial.RoomBuilder.Serializer.cs">
+      <DependentUpon>RoomBuilder.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

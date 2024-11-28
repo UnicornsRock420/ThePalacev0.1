@@ -1,0 +1,17 @@
+IF NOT EXISTS(SELECT TOP 1 1 FROM SYS.TABLES WHERE OBJECT_ID = OBJECT_ID('[Admin].[Sessions]')) BEGIN
+	CREATE TABLE [Admin].[Sessions](
+		[UserID] [int] NOT NULL,
+		[Hash] [UniqueIdentifier] NOT NULL,
+		[LastUsed] [datetime] NOT NULL,
+		[UntilDate] [datetime] NOT NULL,
+	 CONSTRAINT [PK_Sessions] PRIMARY KEY CLUSTERED 
+	(
+		[UserID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+	) ON [PRIMARY]
+
+	PRINT 'CREATED [Admin].[Sessions]'
+END ELSE BEGIN
+	PRINT 'ALREADY EXISTS [Admin].[Sessions]'
+END
+GO

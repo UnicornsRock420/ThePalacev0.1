@@ -1,0 +1,166 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\backgrounds\aephixcorelogo.png" />
+    <None Remove="Resources\backgrounds\clouds.gif" />
+    <None Remove="Resources\backgrounds\clouds.jpg" />
+    <None Remove="Resources\icons\aephixcorelogo.ico" />
+    <None Remove="Resources\icons\backbutton-enabled.png" />
+    <None Remove="Resources\icons\bookmark-off-enabled.png" />
+    <None Remove="Resources\icons\bookmark-on-enabled.png" />
+    <None Remove="Resources\icons\chatlog-enabled.png" />
+    <None Remove="Resources\icons\connection-enabled.png" />
+    <None Remove="Resources\icons\dooroutlines-off-enabled.png" />
+    <None Remove="Resources\icons\dooroutlines-on-enabled.png" />
+    <None Remove="Resources\icons\drawing-enabled.png" />
+    <None Remove="Resources\icons\forwardbutton-enabled.png" />
+    <None Remove="Resources\icons\livedirectory-enabled.png" />
+    <None Remove="Resources\icons\nametags-active.png" />
+    <None Remove="Resources\icons\nametags-inactive.png" />
+    <None Remove="Resources\icons\nametags-off-enabled.png" />
+    <None Remove="Resources\icons\nametags-on-enabled.png" />
+    <None Remove="Resources\icons\playsounds-enabled.png" />
+    <None Remove="Resources\icons\roomlist-enabled.png" />
+    <None Remove="Resources\icons\roomlist-locked.png" />
+    <None Remove="Resources\icons\roomlist-unlocked.png" />
+    <None Remove="Resources\icons\superuser-enabled.png" />
+    <None Remove="Resources\icons\tabs-off-enabled.png" />
+    <None Remove="Resources\icons\tabs-on-enabled.png" />
+    <None Remove="Resources\icons\terminal-enabled.png" />
+    <None Remove="Resources\icons\terminal-hover-frame1.png" />
+    <None Remove="Resources\icons\terminal-hover-frame2.png" />
+    <None Remove="Resources\icons\terminal-hover.png" />
+    <None Remove="Resources\icons\userlist-administrator.png" />
+    <None Remove="Resources\icons\userlist-enabled.png" />
+    <None Remove="Resources\icons\userlist-moderator.png" />
+    <None Remove="Resources\smilies\4leafclovers.png" />
+    <None Remove="Resources\smilies\akwatoo.png" />
+    <None Remove="Resources\smilies\anberlins.png" />
+    <None Remove="Resources\smilies\aqua-smileys.png" />
+    <None Remove="Resources\smilies\asdrains.png" />
+    <None Remove="Resources\smilies\asylum.png" />
+    <None Remove="Resources\smilies\asylumbrites.png" />
+    <None Remove="Resources\smilies\blotters.png" />
+    <None Remove="Resources\smilies\chewy-face.png" />
+    <None Remove="Resources\smilies\classic-smileys.png" />
+    <None Remove="Resources\smilies\cuties.png" />
+    <None Remove="Resources\smilies\defaultsmileys.png" />
+    <None Remove="Resources\smilies\dinks.png" />
+    <None Remove="Resources\smilies\dinks2.png" />
+    <None Remove="Resources\smilies\Droplets.png" />
+    <None Remove="Resources\smilies\emos.png" />
+    <None Remove="Resources\smilies\emosv2.png" />
+    <None Remove="Resources\smilies\falanxesV2.png" />
+    <None Remove="Resources\smilies\imaginations.png" />
+    <None Remove="Resources\smilies\imaginationsV2.png" />
+    <None Remove="Resources\smilies\imaginationsV2_transparent.png" />
+    <None Remove="Resources\smilies\loversv2.png" />
+    <None Remove="Resources\smilies\mattahan.png" />
+    <None Remove="Resources\smilies\palaceposers.png" />
+    <None Remove="Resources\smilies\palaceV2.png" />
+    <None Remove="Resources\smilies\palaceV4.png" />
+    <None Remove="Resources\smilies\palclassics.png" />
+    <None Remove="Resources\smilies\pandis.png" />
+    <None Remove="Resources\smilies\sillies.png" />
+    <None Remove="Resources\smilies\snazzies.png" />
+    <None Remove="Resources\smilies\snoots.png" />
+    <None Remove="Resources\smilies\starrykidds.png" />
+    <None Remove="Resources\smilies\stinkie-hearts.png" />
+    <None Remove="Resources\smilies\stinkies.png" />
+    <None Remove="Resources\smilies\syncs.png" />
+    <None Remove="Resources\smilies\techies.png" />
+    <None Remove="Resources\smilies\transparent_imaginations.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\backgrounds\aephixcorelogo.png" />
+    <EmbeddedResource Include="Resources\backgrounds\clouds.gif" />
+    <EmbeddedResource Include="Resources\backgrounds\clouds.jpg" />
+    <EmbeddedResource Include="Resources\icons\aephixcorelogo.ico" />
+    <EmbeddedResource Include="Resources\icons\backbutton-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\bookmark-off-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\bookmark-on-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\chatlog-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\connection-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\dooroutlines-off-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\dooroutlines-on-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\drawing-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\forwardbutton-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\livedirectory-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\nametags-off-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\nametags-on-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\playsounds-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\roomlist-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\roomlist-locked.png" />
+    <EmbeddedResource Include="Resources\icons\roomlist-unlocked.png" />
+    <EmbeddedResource Include="Resources\icons\superuser-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\tabs-off-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\tabs-on-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\terminal-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\terminal-hover-frame1.png" />
+    <EmbeddedResource Include="Resources\icons\terminal-hover-frame2.png" />
+    <EmbeddedResource Include="Resources\icons\terminal-hover.png" />
+    <EmbeddedResource Include="Resources\icons\userlist-administrator.png" />
+    <EmbeddedResource Include="Resources\icons\userlist-enabled.png" />
+    <EmbeddedResource Include="Resources\icons\userlist-moderator.png" />
+    <EmbeddedResource Include="Resources\smilies\4leafclovers.png" />
+    <EmbeddedResource Include="Resources\smilies\akwatoo.png" />
+    <EmbeddedResource Include="Resources\smilies\anberlins.png" />
+    <EmbeddedResource Include="Resources\smilies\aqua-smileys.png" />
+    <EmbeddedResource Include="Resources\smilies\asdrains.png" />
+    <EmbeddedResource Include="Resources\smilies\asylum.png" />
+    <EmbeddedResource Include="Resources\smilies\asylumbrites.png" />
+    <EmbeddedResource Include="Resources\smilies\blotters.png" />
+    <EmbeddedResource Include="Resources\smilies\chewy-face.png" />
+    <EmbeddedResource Include="Resources\smilies\classic-smileys.png" />
+    <EmbeddedResource Include="Resources\smilies\cuties.png" />
+    <EmbeddedResource Include="Resources\smilies\defaultsmileys.png" />
+    <EmbeddedResource Include="Resources\smilies\dinks.png" />
+    <EmbeddedResource Include="Resources\smilies\dinks2.png" />
+    <EmbeddedResource Include="Resources\smilies\Droplets.png" />
+    <EmbeddedResource Include="Resources\smilies\emos.png" />
+    <EmbeddedResource Include="Resources\smilies\emosv2.png" />
+    <EmbeddedResource Include="Resources\smilies\falanxesV2.png" />
+    <EmbeddedResource Include="Resources\smilies\imaginations.png" />
+    <EmbeddedResource Include="Resources\smilies\imaginationsV2.png" />
+    <EmbeddedResource Include="Resources\smilies\imaginationsV2_transparent.png" />
+    <EmbeddedResource Include="Resources\smilies\loversv2.png" />
+    <EmbeddedResource Include="Resources\smilies\mattahan.png" />
+    <EmbeddedResource Include="Resources\smilies\palaceposers.png" />
+    <EmbeddedResource Include="Resources\smilies\palaceV2.png" />
+    <EmbeddedResource Include="Resources\smilies\palaceV4.png" />
+    <EmbeddedResource Include="Resources\smilies\palclassics.png" />
+    <EmbeddedResource Include="Resources\smilies\pandis.png" />
+    <EmbeddedResource Include="Resources\smilies\sillies.png" />
+    <EmbeddedResource Include="Resources\smilies\snazzies.png" />
+    <EmbeddedResource Include="Resources\smilies\snoots.png" />
+    <EmbeddedResource Include="Resources\smilies\starrykidds.png" />
+    <EmbeddedResource Include="Resources\smilies\stinkie-hearts.png" />
+    <EmbeddedResource Include="Resources\smilies\stinkies.png" />
+    <EmbeddedResource Include="Resources\smilies\syncs.png" />
+    <EmbeddedResource Include="Resources\smilies\techies.png" />
+    <EmbeddedResource Include="Resources\smilies\transparent_imaginations.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThePalace.Core.Client.Core\ThePalace.Core.Client.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core\ThePalace.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enums\" />
+    <Folder Include="Resources\cursors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Models\FormDialog.cs" />
+    <Compile Update="Models\ModalDialog.cs" />
+  </ItemGroup>
+
+</Project>

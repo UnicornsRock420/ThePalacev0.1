@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Localization language="en-US">
+    <Common>
+        <NetworkStates>
+            <Connect present="Connect" past="Connected" active="Connecting"/>
+            <Disconnect present="Disconnect" past="Disconnected" active="Disconnecting"/>
+        </NetworkStates>
+        <ErrorMessages>
+            <Error404 value="This file cannot be found, never more! Quoth the server, '404'"/>
+        </ErrorMessages>
+    </Common>
+    <GUI>
+        <Labels>
+            <User singular="User" plural="Users"/>
+            <Room singular="Room" plural="Rooms"/>
+            <Spot singular="Spot" plural="Spots"/>
+            <Door singular="Door" plural="Doors"/>
+            <Server singular="Server" plural="Servers"/>
+        </Labels>
+    </GUI>
+    <Ribbon>
+        <Bookmarks title="Bookmarks"/>
+        <Connection title="Connection"/>
+        <LiveDirectory title="Live Directory"/>
+        <GoBack title="Go Back"/>
+        <GoForward title="Go Forward"/>
+        <UsersList title="Users List"/>
+        <RoomsList title="Rooms List"/>
+        <Sounds title="Sounds"/>
+        <Draw title="Draw"/>
+        <DoorOutlines title="Door Outlines"/>
+        <UserNametags title="User Nametags"/>
+        <Chatlog title="Chatlog"/>
+        <Tabs title="Tabs"/>
+        <Terminal title="Terminal"/>
+        <SuperUser title="SuperUser"/>
+    </Ribbon>
+    <UserFlags>
+        <Hidden title="Hidden"/>
+        <Pinned title="Pinned"/>
+        <Gagged title="Gagged"/>
+        <PropGagged title="PropGagged"/>
+        <Moderator title="Moderator"/>
+        <Admin title="Administrator"/>
+    </UserFlags>
+    <RoomFlags>
+        <Hidden title="Hidden"/>
+        <DropZone title="Drop Zone"/>
+        <Locked title="Locked"/>
+        <Unlocked title="Unlocked"/>
+    </RoomFlags>
+</Localization>

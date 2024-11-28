@@ -1,0 +1,12 @@
+**/.git
+**/.vs
+**/.idea
+**/bin
+**/log
+**/logs
+**/temp
+**/obj
+**.dll
+**.exe
+**.log
+**.so

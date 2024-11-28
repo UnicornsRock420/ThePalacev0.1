@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>ThePalace.Core.Server.Plugins</AssemblyName>
+    <RootNamespace>ThePalace.Core.Server.Plugins</RootNamespace>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThePalace.Core.Server.Core\ThePalace.Core.Server.Core.csproj" />
+    <ProjectReference Include="..\ThePalace.Core.Server\ThePalace.Core.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Factories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mkdir ..\ThePalace.Core.Server\bin\x64\Debug\net7.0\Plugins\&#xD;&#xA;copy $(OutDir)ThePalace.Core.Server.Plugins.dll ..\ThePalace.Core.Server\bin\x64\Debug\net7.0\Plugins\&#xD;&#xA;copy $(OutDir)ThePalace.Core.Server.Plugins.pdb ..\ThePalace.Core.Server\bin\x64\Debug\net7.0\Plugins\" />
+  </Target>
+
+</Project>

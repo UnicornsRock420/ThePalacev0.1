@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DefineConstants>$(DefineConstants)TRACE;WIN64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineConstants>$(DefineConstants)TRACE;WIN64</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Factories\LockContext.cs" />
+    <Compile Remove="Factories\Singleton.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Libraries\Win\x64\php.exe" />
+    <None Remove="Libraries\Win\x64\php7ts.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Libraries\Win\x64\php.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Libraries\Linux\x64\" />
+    <Folder Include="Libraries\Linux\x86\" />
+    <Folder Include="Libraries\Win\x86\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Factories\LockContext.cs" />
+    <None Include="Factories\Singleton.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThePalace.Core.Database.Core\ThePalace.Core.Database.Core.csproj" />
+  </ItemGroup>
+
+</Project>

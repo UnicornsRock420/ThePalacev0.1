@@ -1,0 +1,21 @@
+IF NOT EXISTS(SELECT TOP 1 1 FROM SYS.TABLES WHERE OBJECT_ID = OBJECT_ID('[Saves].[Rooms]')) BEGIN
+	CREATE TABLE [Saves].[Rooms](
+		[UserID] [int] NOT NULL,
+		[RoomID] [smallint] NOT NULL,
+		[Name] [nvarchar](1024) NOT NULL,
+		[Flags] [int] NOT NULL,
+		[CreateDate] [DATETIME] NOT NULL,
+		[LastModified] [DATETIME] NULL,
+		[MaxOccupancy] [smallint] NOT NULL DEFAULT 0,
+	 CONSTRAINT [PK_Rooms] PRIMARY KEY CLUSTERED 
+	(
+		[UserID] ASC,
+		[RoomID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+	) ON [PRIMARY]
+
+	PRINT 'CREATED [Saves].[Rooms]'
+END ELSE BEGIN
+	PRINT 'ALREADY EXISTS [Saves].[Rooms]'
+END
+GO

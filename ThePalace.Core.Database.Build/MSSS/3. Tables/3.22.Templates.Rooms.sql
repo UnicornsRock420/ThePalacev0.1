@@ -1,0 +1,19 @@
+IF NOT EXISTS(SELECT TOP 1 1 FROM SYS.TABLES WHERE OBJECT_ID = OBJECT_ID('[Templates].[Rooms]')) BEGIN
+	CREATE TABLE [Templates].[Rooms](
+		[TemplateID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](1024) NOT NULL,
+		[Flags] [int] NOT NULL,
+		[CreateDate] [DATETIME] NOT NULL,
+		[LastModified] [DATETIME] NULL,
+		[MaxOccupancy] [smallint] NOT NULL DEFAULT 0,
+	 CONSTRAINT [PK_Rooms] PRIMARY KEY CLUSTERED 
+	(
+		[TemplateID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+	) ON [PRIMARY]
+
+	PRINT 'CREATED [Templates].[Rooms]'
+END ELSE BEGIN
+	PRINT 'ALREADY EXISTS [Templates].[Rooms]'
+END
+GO

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<System>
+    <Ribbon>
+        <Separator/>
+        <Bookmarks binding="">
+            <IconOn path="bookmark-on-enabled.png"/>
+            <IconOff path="bookmark-off-enabled.png"/>
+        </Bookmarks>
+        <Connection binding="">
+            <Icon path="connection-enabled.png"/>
+        </Connection>
+        <LiveDirectory binding="">
+            <Icon path="livedirectory-enabled.png"/>
+        </LiveDirectory>
+        <GoBack binding="">
+            <Icon path="backbutton-enabled.png"/>
+        </GoBack>
+        <GoForward binding="">
+            <Icon path="forwardbutton-enabled.png"/>
+        </GoForward>
+        <UsersList binding="ShowUserListForm">
+            <Icon path="userlist-enabled.png"/>
+        </UsersList>
+        <RoomsList binding="ShowRoomListForm">
+            <Icon path="roomlist-enabled.png"/>
+        </RoomsList>
+        <Sounds binding="">
+            <Icon path="playsounds-enabled.png"/>
+        </Sounds>
+        <Draw binding="">
+            <Icon path="drawing-enabled.png"/>
+        </Draw>
+        <DoorOutlines binding="">
+            <IconOn path="dooroutlines-on-enabled.png"/>
+            <IconOff path="dooroutlines-off-enabled.png"/>
+        </DoorOutlines>
+        <UserNametags binding="">
+            <IconOn path="nametags-on-enabled.png"/>
+            <IconOff path="nametags-off-enabled.png"/>
+        </UserNametags>
+        <Chatlog binding="ShowLogForm">
+            <Icon path="chatlog-enabled.png"/>
+        </Chatlog>
+        <Tabs binding="">
+            <IconOn path="tabs-on-enabled.png"/>
+            <IconOff path="tabs-off-enabled.png"/>
+        </Tabs>
+        <Terminal binding="">
+            <Hover path="terminal-hover.png"/>
+            <Icon path="terminal-enabled.png"/>
+        </Terminal>
+        <SuperUser binding="">
+            <Icon path="superuser-enabled.png"/>
+        </SuperUser>
+    </Ribbon>
+    <Cursors>
+        <!--<Normal><Icon path=""/></Normal>-->
+        <Hover>
+            <Icon path="normal-hover.png"/>
+        </Hover>
+        <Drag>
+            <Icon path="normal-drag.png"/>
+        </Drag>
+    </Cursors>
+    <UserFlags>
+        <Hidden>
+            <Icon path=""/>
+        </Hidden>
+        <Pinned>
+            <Icon path=""/>
+        </Pinned>
+        <Gagged>
+            <Icon path=""/>
+        </Gagged>
+        <PropGagged>
+            <Icon path=""/>
+        </PropGagged>
+        <Moderator>
+            <Icon path="userlist-moderator.png"/>
+        </Moderator>
+        <Admin>
+            <Icon path="userlist-administrator.png"/>
+        </Admin>
+    </UserFlags>
+    <RoomFlags>
+        <Hidden>
+            <Icon path=""/>
+        </Hidden>
+        <DropZone>
+            <Icon path=""/>
+        </DropZone>
+        <Locked>
+            <Icon path="roomlist-locked.png"/>
+        </Locked>
+        <Unlocked>
+            <Icon path="roomlist-unlocked.png"/>
+        </Unlocked>
+    </RoomFlags>
+</System>
